@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Stylight Frontend Developer Task</title>
+    <!-- Put your own styles into this file. -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">Stylight Currency Converter</div>
+
+    <div id='currency-form'>
+        <div class="container">
+            <div class="currency">
+                <span id="sourceCurrencySymbol">&euro;</span>
+                <input id="sourceAmount" type="number" onkeyup="processChange()" value="0">
+                <select id="sourceCurrency" class="dropdown">
+                    <option>USD</option>
+                    <option selected>EUR</option>
+                    <option>JPY</option>
+                </select>
+            </div>
+            <div class="circle-container">
+                <span class="circle">
+                    <img id="rotate-icon" class= "normal" src="assets/switch.svg" onclick="rotateImage()" alt="" srcset="">
+                </span>
+            </div>
+            <div class="currency">
+                <span id="destCurrencySymbol">&#36;</span>
+                <input id="result" type="number" value="0" readonly>
+                <select id="destCurrency" class="dropdown">
+                    <option selected>USD</option>
+                    <option>EUR</option>
+                    <option>JPY</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="previous-results">
+        <table></table>
+        <button id="clear" onclick="clearStorage()" style="display: none">Clear</button>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>

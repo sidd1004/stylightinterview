@@ -1,0 +1,233 @@
+/* Your styles go here. */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html body:last-child {
+    font-family: "helvetica";
+}
+
+body .header {
+    background: #29ceb5;
+    color: #FfFfff;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 50px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+html div + span {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    padding: 1rem;
+}
+
+.container {
+    display:flex;
+    width:630px;
+    justify-content:space-between;
+    margin: auto;
+    margin-top: 50px;
+} 
+
+.container > * {
+    flex-basis: auto;
+}
+
+.circle-container {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    height: 35px;
+    width: 35px;
+    background-color: #29ceb5;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 7px 1px #888888;
+    cursor: pointer;
+}
+
+.circle > img{
+    height: 25px;
+    width: 25px;
+}
+
+.currency {
+    vertical-align: middle;
+    display: flex;
+    height: 70px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 14px 1px #8888883b;
+    width: 215px;
+}
+
+.currency span {
+    font-size: 18px;
+    font-weight: 700;
+    color:#88888899;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+}
+
+/* Reset Select */
+select {
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+    color: #29ceb5;
+    flex: 1;
+    padding: 0 .5em;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    line-height: 3;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: white;
+    margin-right: 20px;
+}
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+}
+  /* Arrow */
+select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+.rotate {
+    -webkit-animation:spin 1s linear;
+    -moz-animation:spin 1s linear;
+    animation:spin 1s linear;
+ }
+
+ .reverse {
+    -webkit-animation:reversespin 1s linear;
+    -moz-animation:reversespin 1s linear;
+    animation:reversespin 1s linear;
+ }
+ 
+ .normal {
+    -ms-transform: rotate(0deg);
+     -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+ }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(180deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(180deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
+
+@-moz-keyframes reversespin { 100% { -moz-transform: rotate(-180deg); } }
+@-webkit-keyframes reversespin { 100% { -webkit-transform: rotate(-180deg); } }
+@keyframes reversespin { 100% { -webkit-transform: rotate(-180deg); transform:rotate(-180deg); } }
+
+#result:hover {
+    cursor: default;;
+}
+
+#result {
+    color: #88888899
+}
+
+table{
+    margin: 150px auto 0 auto;
+    border-collapse: collapse;
+}
+
+td, th{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #29ceb5;
+    color: #fff;
+}
+
+#clear {
+    margin: 15px auto;
+}
