@@ -89,7 +89,6 @@ html div + span {
 
 .container {
     display:flex;
-    width:630px;
     justify-content:space-between;
     margin: auto;
     margin-top: 50px;
@@ -97,6 +96,22 @@ html div + span {
 
 .container > * {
     flex-basis: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 250px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 680px;
+    }
 }
 
 .circle-container {
